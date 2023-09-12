@@ -3,7 +3,11 @@
 
 int main(void){
     int x = get_int("x: ");
-    int y = get_int("y: ");
+    int y = get_int()"y: ");
 
-    printf()
+    printf("%i\n", add(x, y))
+}
+
+int add(int a, int b){
+    return a+b;
 }
