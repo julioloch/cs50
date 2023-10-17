@@ -3,9 +3,10 @@
 
 int main(void)
 {
+    int height = 0;
     do
     {
-        int height = get_int("Whats the height? ");
+        height = get_int("Whats the height? ");
     }
     while (height < 1 || height > 8);
 
