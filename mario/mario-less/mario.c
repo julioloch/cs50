@@ -10,13 +10,16 @@ int main(void)
         height = get_int("Whats the height? ");
     }
 
+    numberOfDots = height - 1;
+
     for (int line = 0; line < height; line++)
     {
-        numberOfDots = height - line - 1;
+
         for (int i = 0; i >= numberOfDots; i++)
         {
             printf(".");
         }
+        numberOfDots--;
 
         for (int j = 0; j <= line; j++)
         {
