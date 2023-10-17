@@ -4,6 +4,7 @@
 int main(void)
 {
     int height = 0;
+    int numberOfDots = 0;
     while (height < 1 || height > 8)
     {
         height = get_int("Whats the height? ");
@@ -11,7 +12,8 @@ int main(void)
 
     for (int line = 0; line < height; line++)
     {
-        for (int j = line-1; j >= 0; j--)
+        numberOfDots = height - line - 1;
+        for (int i = 0; i >= numberOfDots; i++)
         {
             printf(".");
         }
