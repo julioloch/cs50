@@ -11,7 +11,7 @@ int main(void)
 
     for (int line = 0; line < height; line++)
     {
-        for (int j = 0; j < line; j++)
+        for (int j = line-1; j >= 0; j--)
         {
             printf(".");
         }
@@ -20,7 +20,7 @@ int main(void)
         {
             printf("#");
         }
-        
+
         printf("\n");
     }
 }
