@@ -8,6 +8,7 @@ int main(void)
     {
         height = get_int("Whats the height? ");
     }
+    printf("teste1");
 
 
     for (int i = 0; i >= height; i++)
@@ -18,4 +19,5 @@ int main(void)
         }
         printf("\n");
     }
+    printf("teste2");
 }
