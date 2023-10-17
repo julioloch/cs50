@@ -9,14 +9,14 @@ int main(void)
         height = get_int("Whats the height? ");
     }
 
-    for (int i = 0; i < height; i++)
+    for (int line = 0; line < height; line++)
     {
-        for (int j = 0; j <= i-1; j++)
+        for (int j = 0; j <= line-1; j++)
         {
             printf(".");
         }
 
-        for (int j = 0; j <= i; j++)
+        for (int j = 0; j <= line; j++)
         {
             printf("#");
         }
