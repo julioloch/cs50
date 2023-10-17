@@ -4,11 +4,11 @@
 int main(void)
 {
     int height = 5;
-    do
+    while (height < 1 || height > 8)
     {
         height = get_int("Whats the height? ");
     }
-    while (height < 1 || height > 8);
+
 
     for (int i = 0; i >= height; i++)
     {
