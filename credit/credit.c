@@ -1,6 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
-
+#include <math.h>
 
 long int creditCard = 0;
 bool alternateNumber = false;
@@ -13,9 +13,10 @@ int main(void)
     }
     while (creditCard <= 0);
     printf("number is: %li\n", creditCard);
-    printf("")
+    printf("%i");
 }
 
 int sumEveryOtherDigit(long int creditCard){
-    int aux = creditCard%10
+    sum = creditCard % 10;
+
 }
