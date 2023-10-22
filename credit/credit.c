@@ -2,12 +2,12 @@
 #include <stdio.h>
 #include <math.h>
 
-long creditCard = 0;
 bool alternateDigit = false;
 
 int main(void)
 {
-    creditCard = get_long("Number: ");
+    long creditCard = get_long("Number: ");
+    int sumEveryOtherDigit = everyOtherDigit(creditCard);
 }
 
 int everyOtherDigit(long creditCard){
