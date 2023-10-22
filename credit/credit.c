@@ -22,8 +22,9 @@ int everyOtherDigit(long creditCard){
             int lastDigit = creditCard % 10;
             creditCard = creditCard / 10;
             int aux = lastDigit * 2;
-            while (aux > 9){
-                int secondDigitAux = 
+            while (aux > 0){
+                int lastDigitAux = aux % 10;
+                lastDigitAux = lastDigitAux / 10;
             }
         }
     }
