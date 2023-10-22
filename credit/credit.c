@@ -17,10 +17,10 @@ int main(void)
 
 int everyOtherDigit(long creditCard){
     int sum = 0;
-
     while(creditCard > 0){
         int lastDigit = creditCard % 10;
         creditCard = creditCard / 10;
         sum += lastDigit;
     }
+    return sum;
 }
