@@ -2,7 +2,12 @@
 #include <stdio.h>
 #include <math.h>
 
+// variables
 bool alternateDigit = false;
+
+//prototypes of functions
+int everyOtherDigit(long creditCard);
+
 
 int main(void)
 {
@@ -18,5 +23,4 @@ int everyOtherDigit(long creditCard){
         creditCard = creditCard / 10;
         sum += lastDigit;
     }
-
 }
