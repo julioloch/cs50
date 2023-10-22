@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int long creditCard = 0;
+long int creditCard = 0;
 
 int main(void)
 {
@@ -9,5 +9,5 @@ int main(void)
         creditCard = get_int("Number: ");
     }
     while (creditCard <= 0);
-    printf(%int long, creditCard);
+    printf("%li", creditCard);
 }
