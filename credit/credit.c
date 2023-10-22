@@ -27,6 +27,7 @@ int everyOtherDigit(long creditCard){
                 aux = aux / 10;
                 lastDigitAux += lastDigitAux;
             }
+            alternateDigit = !alternateDigit;
         }
     }
     return sum;
