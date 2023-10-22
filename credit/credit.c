@@ -9,7 +9,7 @@ int sum = 0;
 int main(void)
 {
     do{
-        creditCard = get_int("Number: ");
+        creditCard = get_long("Number: ");
     }
     while (creditCard <= 0);
     printf("number is: %li\n", creditCard);
