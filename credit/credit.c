@@ -2,21 +2,20 @@
 #include <stdio.h>
 #include <math.h>
 
-long int creditCard = 0;
-bool alternateNumber = false;
-int sum = 0;
+long creditCard = 0;
+bool alternateDigit = false;
 
 int main(void)
 {
-    do{
-        creditCard = get_long("Number: ");
-    }
-    while (creditCard <= 0);
-    printf("number is: %li\n", creditCard);
-    printf("%i");
+    creditCard = get_long("Number: ");
 }
 
-int sumEveryOtherDigit(long int creditCard){
-    sum = creditCard % 10;
+int everyOtherDigit(long creditCard){
+    int sum = 0;
+
+    while(creditCard > 0){
+        int lastDigit = creditCard % 10;
+        creditCard = creditCard / 10;
+    }
 
 }
