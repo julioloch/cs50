@@ -16,6 +16,7 @@ int everyOtherDigit(long creditCard){
     while(creditCard > 0){
         int lastDigit = creditCard % 10;
         creditCard = creditCard / 10;
+        sum += lastDigit;
     }
 
 }
