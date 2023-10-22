@@ -3,8 +3,9 @@
 
 int main(void)
 {
-    while (creditCard < 0){
-
+    do{
+        int long creditCard = get_int("Number: ");
     }
-    printf(%i, creditCard)
+    while (creditCard < 0);
+    printf(%i, creditCard);
 }
