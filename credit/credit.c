@@ -9,5 +9,5 @@ int main(void)
         creditCard = get_int("Number: ");
     }
     while (creditCard <= 0);
-    printf("%li", creditCard);
+    printf("number is: %li", creditCard);
 }
