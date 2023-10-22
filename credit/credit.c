@@ -24,7 +24,9 @@ int everyOtherDigit(long creditCard){
             int aux = lastDigit * 2;
             while (aux > 0){
                 int lastDigitAux = aux % 10;
-                lastDigitAux = lastDigitAux / 10;
+                aux = aux / 10;
+                lastDigitAux += lastDigitAux;
+
             }
         }
     }
