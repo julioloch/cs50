@@ -21,7 +21,8 @@ int everyOtherDigit(long creditCard){
         if (alternateDigit == true){
             int lastDigit = creditCard % 10;
             creditCard = creditCard / 10;
-            sum += lastDigit*2;
+            int aux = lastDigit * 2;
+            aux = aux
         }
     }
     return sum;
