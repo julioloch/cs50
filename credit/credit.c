@@ -16,39 +16,48 @@ int main(void)
     printf("Credit checksum is true? ");
     printf(luhn(creditCard) ? "true \n" : "false \n");
     printf("Card has %i digits! \n", countDigits(creditCard));
-    printf("pow teste %li", teste);
 }
 
 bool luhn(long creditCard){
     int totalSum = 0;
-    while(creditCard > 0){
+
+    while(creditCard > 0)
+    {
         int lastDigit = creditCard % 10;
         creditCard = creditCard / 10;
-        if (alternateDigit == true){
+        if (alternateDigit == true)
+        {
             int aux = lastDigit * 2;
-            while (aux > 0){ //sums each digit after multiply
+            while (aux > 0) //sums each digit after multiply
+            {
                 int lastDigitAux = aux % 10;
                 aux = aux / 10;
                 totalSum += lastDigitAux;
             }
             alternateDigit = !alternateDigit;
-        } else if (alternateDigit == false){
+        } else if (alternateDigit == false)
+        {
             totalSum += lastDigit;
             alternateDigit = !alternateDigit;
         }
     }
-    if (totalSum % 10 == 0){
+
+    if (totalSum % 10 == 0)
+    {
         return true;
-    } else return false;
+    } else {
+        return false;
+    }
 }
 
 int countDigits(long creditCard){
     int totalDigits = 0;
-    while(creditCard > 0){
+    while(creditCard > 0)
+    {
         int lastDigit = creditCard % 10;
         creditCard = creditCard / 10;
         totalDigits++;
-        }
+    }
     return totalDigits;
 }
 
