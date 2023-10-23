@@ -12,11 +12,11 @@ int everyOtherDigit(long creditCard);
 int main(void)
 {
     long creditCard = get_long("Number: ");
-    int sumEveryOtherDigit = everyOtherDigit(creditCard);
+    int sumEveryOtherDigit = luhn(creditCard);
     printf("Total: %i\n", sumEveryOtherDigit);
 }
 
-int everyOtherDigit(long creditCard){
+int luhn(long creditCard){
     int totalSum = 0;
     while(creditCard > 0){
         int lastDigit = creditCard % 10;
