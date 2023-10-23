@@ -13,6 +13,7 @@ int main(void)
 {
     long creditCard = get_long("Number: ");
     int sumEveryOtherDigit = everyOtherDigit(creditCard);
+    printf("Total: %i\n", sumEveryOtherDigit);
 }
 
 int everyOtherDigit(long creditCard){
