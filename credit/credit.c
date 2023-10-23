@@ -12,10 +12,10 @@ int luhn(long creditCard);
 int main(void)
 {
     long creditCard = get_long("Number: ");
-    printf("Total: %i\n", luhn(creditCard));
+    printf("Total: %bool\n", luhn(creditCard));
 }
 
-int luhn(long creditCard){
+bool luhn(long creditCard){
     int totalSum = 0;
     while(creditCard > 0){
         int lastDigit = creditCard % 10;
@@ -33,5 +33,8 @@ int luhn(long creditCard){
             alternateDigit = !alternateDigit;
         }
     }
-    return totalSum;
+    if (totalSum % 10 == 0){
+        return true;
+    } else return false;
+
 }
