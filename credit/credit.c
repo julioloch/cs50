@@ -17,7 +17,9 @@ int main(void)
     printf(luhn(creditCard) ? "true \n" : "false \n");
     printf("Card has %i digits! \n", countDigits(creditCard));
 
-    if (countDigits(creditCard) == 15 && )
+    if (countDigits(creditCard) == 15 && (creditCard % pow(10,13) == 34 || creditCard % pow(10,13) == 37)){
+        printf("AMEX\n");
+    }
 }
 
 bool luhn(long creditCard){
@@ -61,10 +63,4 @@ int countDigits(long creditCard){
         totalDigits++;
     }
     return totalDigits;
-}
-
-bool checkAmex(long creditCard){
-    if (countDigits(creditCard) == 15 && creditCard % pow(10,13)){
-
-    }
 }
