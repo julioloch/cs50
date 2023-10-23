@@ -6,14 +6,13 @@
 bool alternateDigit = false;
 
 //prototypes of functions
-int everyOtherDigit(long creditCard);
+int luhn(long creditCard);
 
 
 int main(void)
 {
     long creditCard = get_long("Number: ");
-    int sumEveryOtherDigit = luhn(creditCard);
-    printf("Total: %i\n", sumEveryOtherDigit);
+    printf("Total: %i\n", luhn(creditCard));
 }
 
 int luhn(long creditCard){
