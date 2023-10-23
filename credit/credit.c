@@ -64,7 +64,7 @@ int countDigits(long creditCard){
 }
 
 bool checkAmex(long creditCard){
-    if (countDigits(creditCard) == 15){
-        
+    if (countDigits(creditCard) == 15 && creditCard % pow(10,13)){
+
     }
 }
