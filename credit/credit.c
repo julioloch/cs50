@@ -6,7 +6,7 @@
 bool alternateDigit = false;
 
 //prototypes of functions
-int luhn(long creditCard);
+bool luhn(long creditCard);
 
 
 int main(void)
