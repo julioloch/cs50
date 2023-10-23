@@ -16,7 +16,7 @@ int main(void)
 }
 
 int everyOtherDigit(long creditCard){
-    int sum = 0;
+    int totalSum = 0;
     while(creditCard > 0){
             int lastDigit = creditCard % 10;
             creditCard = creditCard / 10;
@@ -25,11 +25,10 @@ int everyOtherDigit(long creditCard){
             while (aux > 0){ //sums each digit after multiply
                 int lastDigitAux = aux % 10;
                 aux = aux / 10;
-                lastDigitAux += lastDigitAux;
+                totalSum += lastDigitAux;
             }
-            sum += lastDigitAux;
             alternateDigit = !alternateDigit;
         }
     }
-    return sum;
+    return totalSum;
 }
