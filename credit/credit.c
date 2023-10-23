@@ -13,6 +13,7 @@ int checkDigits(long creditCard);
 int main(void)
 {
     long creditCard = get_long("Number: ");
+    printf("Credit checksum is true? ");
     printf(luhn(creditCard) ? "true \n" : "false \n");
     printf("Card has %i digits! \n", checkDigits(creditCard));
 }
