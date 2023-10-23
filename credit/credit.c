@@ -7,7 +7,7 @@ bool alternateDigit = false;
 
 //prototypes of functions
 bool luhn(long creditCard);
-int checkDigits(long creditCard);
+int countDigits(long creditCard);
 
 
 int main(void)
@@ -15,7 +15,7 @@ int main(void)
     long creditCard = get_long("Number: ");
     printf("Credit checksum is true? ");
     printf(luhn(creditCard) ? "true \n" : "false \n");
-    printf("Card has %i digits! \n", checkDigits(creditCard));
+    printf("Card has %i digits! \n", countDigits(creditCard));
 }
 
 bool luhn(long creditCard){
@@ -41,7 +41,7 @@ bool luhn(long creditCard){
     } else return false;
 }
 
-int checkDigits(long creditCard){
+int countDigits(long creditCard){
     int totalDigits = 0;
     while(creditCard > 0){
         int lastDigit = creditCard % 10;
