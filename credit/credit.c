@@ -13,7 +13,8 @@ int countDigits(long creditCard);
 int main(void)
 {
     long creditCard = get_long("Number: ");
-    if ((countDigits(creditCard) == 15) && ((creditCard % (long)pow(10,13) == 34) || (creditCard % (long)pow(10,13) == 37))){
+    long teste = creditCard % (long)pow(10,13);
+    if ((countDigits(creditCard) == 15) && ((creditCard % (long)pow(10,14) == 34) || (creditCard % (long)pow(10,14) == 37))){
         printf("AMEX\n");
     }
 }
