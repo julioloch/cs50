@@ -20,7 +20,7 @@ int everyOtherDigit(long creditCard){
     while(creditCard > 0){
             int lastDigit = creditCard % 10;
             creditCard = creditCard / 10;
-        if (alternateDigit == true){
+        if (true){
             int aux = lastDigit * 2;
             while (aux > 0){
                 int lastDigitAux = aux % 10;
