@@ -63,3 +63,8 @@ int countDigits(long creditCard){
     return totalDigits;
 }
 
+bool checkAmex(long creditCard){
+    if (countDigits(creditCard) == 15){
+        
+    }
+}
