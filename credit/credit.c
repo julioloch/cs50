@@ -18,13 +18,19 @@ Visa 13 and 16 digits, starts with 4
 int main(void)
 {
     long creditCard = get_long("Number: ");
-    while(luhn(creditCard) == true)
+    if (luhn(creditCard) == true)
     {
         if ((countDigits(creditCard) == 15) && ((creditCard / (long)pow(10,13) == 34) || (creditCard / (long)pow(10,13) == 37))){
             printf("AMEX\n");
         } else if (((countDigits(creditCard) == 13) || (countDigits(creditCard) == 16)) && ((creditCard / (long)pow(10,12) == 4) || (creditCard / (long)pow(10,15) == 4))){
             printf("VISA\n");
-        } else if 
+        } else if ((countDigits(creditCard) == 16) && ((creditCard / (long)pow(10,14) == 51) || (creditCard / (long)pow(10,14) == 52) || (creditCard / (long)pow(10,14) == 53) || (creditCard / (long)pow(10,14) == 54) || (creditCard / (long)pow(10,14) == 55))){
+            printf("MASTERCARD\n");
+        } else {
+            printf("INVALID\n");
+        }
+    } else {
+        printf("INVALID\n");
     }
 }
 
