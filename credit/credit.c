@@ -16,7 +16,7 @@ int main(void)
     printf("Credit checksum is true? ");
     printf(luhn(creditCard) ? "true \n" : "false \n");
     printf("Card has %i digits! \n", countDigits(creditCard));
-    printf("")
+    printf("pow teste %li", teste);
 }
 
 bool luhn(long creditCard){
