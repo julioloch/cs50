@@ -22,7 +22,9 @@ int main(void)
     {
         if ((countDigits(creditCard) == 15) && ((creditCard / (long)pow(10,13) == 34) || (creditCard / (long)pow(10,13) == 37))){
             printf("AMEX\n");
-        } else if
+        } else if (((countDigits(creditCard) == 13) || (countDigits(creditCard) == 16)) && ((creditCard / (long)pow(10,12) == 4) || (creditCard / (long)pow(10,15) == 4))){
+            printf("VISA\n");
+        } else if 
     }
 }
 
