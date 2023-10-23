@@ -9,6 +9,11 @@ bool alternateDigit = false;
 bool luhn(long creditCard);
 int countDigits(long creditCard);
 
+/*
+AMEX 15 digits, starts with 34 or 37
+MasterCard 16 digits, starts with 51, 52, 53, 54 or 55
+Visa 13 and 16 digits, starts with 4
+*/
 
 int main(void)
 {
@@ -17,7 +22,7 @@ int main(void)
     {
         if ((countDigits(creditCard) == 15) && ((creditCard / (long)pow(10,13) == 34) || (creditCard / (long)pow(10,13) == 37))){
             printf("AMEX\n");
-        } else if 
+        } else if
     }
 }
 
