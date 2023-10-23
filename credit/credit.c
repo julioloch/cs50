@@ -12,7 +12,7 @@ bool luhn(long creditCard);
 int main(void)
 {
     long creditCard = get_long("Number: ");
-    printf("Total: %d\n", luhn(creditCard));
+    printf(luhn(creditCard) ? "true \n" : "false \n");
 }
 
 bool luhn(long creditCard){
