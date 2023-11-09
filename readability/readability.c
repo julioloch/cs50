@@ -6,7 +6,6 @@
 int main(void)
 {
     string text = get_string("Text: ");
-    int position = 0;
     int letters = 0;
     int sentences = 0;
     int words = 1;
@@ -21,13 +20,7 @@ int main(void)
         }
     }
 
-    while (text[position] != '\0'){
-        position++;
-    }
-
-    printf("Text is: %s\n"
-            "Has %i letters.\n"
-            "Total positions: %i. \n"
+    printf( "Has %i letters.\n"
             "Total words: %i. \n"
-            "Total sentences: %i. \n", text, letters, position, words, sentences);
+            "Total sentences: %i. \n", letters, words, sentences);
 }
