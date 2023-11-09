@@ -20,5 +20,5 @@ int main(void)
         }
         position++;
     }
-    printf("Text is: %s\n Has %i letters.", textInput, lettersTotal);
+    printf("Text is: %s\n Has %i letters.\n", textInput, lettersTotal);
 }
