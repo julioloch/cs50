@@ -6,7 +6,9 @@
 int main(void)
 {
     string text = get_string("Text: ");
-    int position, letters, sentences = 0;
+    int position = 0;
+    int letters = 0;
+    int sentences = 0;
     int words = 1;
 
     for (int i = 0, textLenght = strlen(text); i < textLenght; i++){
