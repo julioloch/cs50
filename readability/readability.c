@@ -8,7 +8,7 @@ int main(void)
     int sentencesTotal = 0;
 
     while (textInput[] != "\0"){
-        
+        for (int i = 0; i<)
     }
     printf("%s\n", textInput);
 }
