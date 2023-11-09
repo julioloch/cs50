@@ -1,4 +1,5 @@
 #include <cs50.h>
+#include <ctype.h>
 #include <stdio.h>
 
 int main(void)
@@ -11,10 +12,10 @@ int main(void)
 
     while (textInput[] != "\0"){
         for (int i = 0; i < textLenght; i++){
-            if (textInput[i] )
+            if (tolower(textInput[i]) > 'a' && tolower(textInput[i]) < 'z'){
                 lettersTotal++;
-
+            }
         }
     }
-    printf("%s\n", textInput);
+    printf("Text is: %s\n Has %i letters.", textInput, lettersTotal);
 }
