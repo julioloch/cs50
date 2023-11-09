@@ -12,7 +12,7 @@ int main(void)
     int sentencesTotal = 0;
     int textLenght = strlen(textInput);
 
-    while (textInput[position] != "\0"){
+    while (textInput[position] != '\0'){
         for (int i = 0; i < textLenght; i++){
             if (tolower(textInput[i]) > 'a' && tolower(textInput[i]) < 'z'){
                 lettersTotal++;
