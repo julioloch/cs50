@@ -2,6 +2,7 @@
 #include <ctype.h>
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 
 int main(void)
 {
@@ -9,8 +10,6 @@ int main(void)
     int letters = 0;
     int sentences = 0;
     int words = 1;
-    int grade = 0;
-    double index = 0;
 
     for (int i = 0, textLenght = strlen(text); i < textLenght; i++){
         if (tolower(text[i]) >= 'a' && tolower(text[i]) <= 'z'){
@@ -22,16 +21,16 @@ int main(void)
         }
     }
 
-    L = letters / words * 100;
-    S = sentences / words * 100;
+    double L = letters / words * 100;
+    double S = sentences / words * 100;
+    double index = 0.0588 * L - 0.296 * S - 15.8;
+    int grade = round(index);
 
-    index = 0.0588 * L - 0.296 * S - 15.8;
-
-    grade = 
-
-
-
-    printf( "Has %i letters.\n"
-            "Total words: %i. \n"
-            "Total sentences: %i. \n", letters, words, sentences);
+    if (grade < 1){
+        printf("Before Grade 1");
+    } else if (grade >= 16){
+        printf("Grade 16+");
+    } else {
+        printf("Grade %i\n", grade);
+    }
 }
