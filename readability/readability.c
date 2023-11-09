@@ -6,15 +6,16 @@
 int main(void)
 {
     string text = get_string("Text: ");
-    int position, letters, words, sentences = 0;
+    int position, letters, sentences = 0;
+    int words = 1;
 
     for (int i = 0, textLenght = strlen(text); i < textLenght; i++){
-        if (tolower(textInput[i]) >= 'a' && tolower(textInput[i]) <= 'z'){
+        if (tolower(text[i]) >= 'a' && tolower(text[i]) <= 'z'){
             letters++;
-        }
-
-        if (textinput[i] == ' '){
-            words++
+        } else if (text[i] == ' '){
+            words++;
+        } else if (text[i] == '.' || text[i] == '!' || text[i] == '?'){
+            sentences++;
         }
     }
 
@@ -22,5 +23,5 @@ int main(void)
         position++;
     }
 
-    printf("Text is: %s\n Has %i letters. Total positions: %i\n", text, letters, position);
+    printf("Text is: %s\n Has %i letters. Total positions: %i. Total words: %i\n", text, letters, position, words);
 }
