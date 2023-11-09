@@ -11,7 +11,7 @@ int main(void)
 
     while (textInput[] != "\0"){
         for (int i = 0; i < textLenght; i++){
-            if (textInput[i])
+            if (textInput[i] )
                 lettersTotal++;
 
         }
