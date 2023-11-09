@@ -9,6 +9,7 @@ int main(void)
     int letters = 0;
     int sentences = 0;
     int words = 1;
+    double index = 0;
 
     for (int i = 0, textLenght = strlen(text); i < textLenght; i++){
         if (tolower(text[i]) >= 'a' && tolower(text[i]) <= 'z'){
@@ -19,6 +20,11 @@ int main(void)
             sentences++;
         }
     }
+
+    L = letters / words * 100;
+    S = sentences / words * 100;
+
+    index = 0.0588 * L - 0.296 * S - 15.8;
 
     printf( "Has %i letters.\n"
             "Total words: %i. \n"
