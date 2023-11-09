@@ -9,6 +9,7 @@ int main(void)
     int letters = 0;
     int sentences = 0;
     int words = 1;
+    int grade = 0;
     double index = 0;
 
     for (int i = 0, textLenght = strlen(text); i < textLenght; i++){
@@ -25,6 +26,10 @@ int main(void)
     S = sentences / words * 100;
 
     index = 0.0588 * L - 0.296 * S - 15.8;
+
+    grade = 
+
+
 
     printf( "Has %i letters.\n"
             "Total words: %i. \n"
