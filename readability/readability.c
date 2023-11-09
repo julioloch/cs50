@@ -19,9 +19,13 @@ int main(void)
         }
     }
 
-    while (textInput[position] != '\0'){
+    while (text[position] != '\0'){
         position++;
     }
 
-    printf("Text is: %s\n Has %i letters. Total positions: %i. Total words: %i\n", text, letters, position, words);
+    printf("Text is: %s\n"
+            "Has %i letters.\n"
+            "Total positions: %i. \n"
+            "Total words: %i. \n"
+            "Total sentences: %i. \n", text, letters, position, words, sentences);
 }
