@@ -21,8 +21,8 @@ int main(void)
         }
     }
 
-    double L = (letters / words) * 100;
-    double S = (sentences / words) * 100;
+    double L = ((double)letters / words) * 100;
+    double S = ((double)sentences / words) * 100;
     double index = (0.0588 * L) - (0.296 * S) - 15.8;
     int grade = round(index);
 
