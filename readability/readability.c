@@ -5,16 +5,16 @@
 
 int main(void)
 {
-    string textInput = get_string("Text: ");
-    int position = 0;
-    int lettersTotal = 0;
-    int wordsTotal = 0;
-    int sentencesTotal = 0;
-    int textLenght = strlen(textInput);
+    string text = get_string("Text: ");
+    int position, letters, words, sentences = 0;
 
-    for (int i = 0; i < textLenght; i++){
+    for (int i = 0, textLenght = strlen(text); i < textLenght; i++){
         if (tolower(textInput[i]) >= 'a' && tolower(textInput[i]) <= 'z'){
-            lettersTotal++;
+            letters++;
+        }
+
+        if (textinput[i] == ' '){
+            words++
         }
     }
 
@@ -22,5 +22,5 @@ int main(void)
         position++;
     }
 
-    printf("Text is: %s\n Has %i letters. Total positions: %i\n", textInput, lettersTotal, position);
+    printf("Text is: %s\n Has %i letters. Total positions: %i\n", text, letters, position);
 }
