@@ -13,7 +13,7 @@ int main(void)
     int textLenght = strlen(textInput);
 
     for (int i = 0; i < textLenght; i++){
-        if (tolower(textInput[i]) > 'a' && tolower(textInput[i]) < 'z'){
+        if (tolower(textInput[i]) >= 'a' && tolower(textInput[i]) <= 'z'){
             lettersTotal++;
         }
     }
