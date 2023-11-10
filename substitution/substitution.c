@@ -39,7 +39,7 @@ int isKeyValid(string key){
 
     //Check if is alphabetic
 
-    char keyFreq[] = {};
+    char keyFreq[26] = {0};
     for (int i = 0; i <= 26; i++)
     {
         if (isalpha(key[i]) == 0)
