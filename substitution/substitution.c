@@ -21,6 +21,15 @@ int main(int argc, string argv[])
 }
 
 int isKeyValid(string key){
+    /* Checks if a key is valid. Return 1 if valid, 0 if invalid.
 
+    Key is valid by:
+    not containing 26 characters
+    containing any character that is not an alphabetic character
+    not containing each letter exactly once */
+
+    if (strlen(key) > 26 || strlen(key) < 26){
+        return 0;
+    } else if ()
     return 0;
 }
