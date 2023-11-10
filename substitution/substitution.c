@@ -72,10 +72,9 @@ string encrypt(string plaintext, string key){
         if (isalpha(c)){
             if (islower(c)){
                 ciphertext[i] = tolower(key[c - 'a']);
-            } else {
+            } else if (isupper(c)) {
                 ciphertext[i] = toupper(key[c - 'a']);
-            }
-        } else {
+            } else {
             ciphertext[i] = plaintext[i];
         }
     }
