@@ -64,5 +64,6 @@ int isKeyValid(string key){
 }
 
 string encrypt(string plaintext, string key){
+    
 
 }
