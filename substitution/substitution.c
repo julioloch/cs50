@@ -10,7 +10,7 @@ int main(int argc, string argv[])
         printf("Usage: ./substitution key\n");
     } else if (argc > 1){
         printf("Key must contain 26 characters.\n");
-    } else if (isKeyValid(key) > 0) {
+    } else if (isKeyValid(key)) {
         if (isKeyValid())
         string key = argv[1];
     }
@@ -21,4 +21,5 @@ int main(int argc, string argv[])
 
 int isKeyValid(string key){
 
+    return 0;
 }
