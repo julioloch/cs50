@@ -69,7 +69,7 @@ string encrypt(string plaintext, string key){
     char aux;
     while (plaintext[i] =! '\0'){
         if (isalpha(plaintext[i])){
-
+            aux = key[tolower(plaintext[i]) - 'a']
             ciphertext[i] = aux;
         }
         i++;
