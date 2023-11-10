@@ -37,14 +37,14 @@ int isKeyValid(string key){
 
     //Check if is alphabetic
 
-    string keyValues[26] = {};
-    for (int i = 0, keyLen = strlen(key); i <= keyLen; i++)
+    char keyValues[26] = {};
+    for (int i = 0; i <= 26; i++)
     {
         if (isalpha(key[i]) == 0){
             return 0;
         } else {
             for (int j = 0; j < 26; j++){
-                if (keyValues[j] = key[i]){
+                if (keyValues[j] == key[i]){
                     printf("Key has two or more identical characters");
                     return 0;
                 } else {
