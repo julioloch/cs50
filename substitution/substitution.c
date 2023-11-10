@@ -64,12 +64,12 @@ int isKeyValid(string key){
 }
 
 string encrypt(string plaintext, string key){
-    int i = 0;
+
     string ciphertext = NULL;
     char aux;
     char c;
 
-    for (int i = 0; c != '\0'; i++){
+    for (int i = 0; plaintext[] != '\0'; i++){
         c = plaintext[i];
         if (isalpha(c)){
             aux = key[tolower(c) - 'a'];
