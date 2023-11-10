@@ -20,9 +20,10 @@ int main(int argc, string argv[])
     }
 
     if (isKeyValid(key)){
-        printf("%s\n", argv[1]);
+        printf("Key is: %s\n", key);
+    } else {
+        printf("Invalid Key\n");
     }
-
     return 0;
 }
 
@@ -39,7 +40,7 @@ int isKeyValid(string key){
 
     char keyFreq[26] = {0};
 
-    for (int i = 0; i <= 26; i++){
+    for (int i = 0; i < 26; i++){
         if (isalpha(key[i]) == 0){ // Check if is alphabetic
             return 0;
         } else {
@@ -47,7 +48,7 @@ int isKeyValid(string key){
         }
     }
 
-    for (int i = 0; i <= 26; i++){
+    for (int i = 0; i < 26; i++){
         if(keyFreq[i] > 1){ // Checks if a letter has been used twice or more
             printf("Key has two or more identical characters\n");
             return 0;
