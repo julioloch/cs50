@@ -2,11 +2,11 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int isKeyValid(string key){}
+int isKeyValid(string key);
 
 int main(int argc, string argv[])
 {
-    if (argc = 0 || argc > 1){
+    if ((argc == 0) || (argc > 1)){
         printf("Usage: ./substitution key\n");
         return 1;
     } else if (isKeyValid(key) == 0) {
@@ -40,4 +40,5 @@ int isKeyValid(string key){
             }
         }
     }
+    return 1;
 }
