@@ -3,7 +3,7 @@
 #include <ctype.h>
 #include <string.h>
 
-int isKeyValid(string key);
+//int isKeyValid(string key);
 
 int main(int argc, string argv[])
 {
@@ -14,7 +14,7 @@ int main(int argc, string argv[])
     }
 
     string key = argv[1];
-    
+
     if (isKeyValid(key) == 0) {
         printf("Key must contain 26 characters.\n");
         return 2;
@@ -24,13 +24,15 @@ int main(int argc, string argv[])
     return 0;
 }
 
+/*
+
 int isKeyValid(string key){
-    /* Checks if a key is valid. Return 1 if valid, 0 if invalid.
+    Checks if a key is valid. Return 1 if valid, 0 if invalid.
 
     Key is valid by:
     not containing 26 characters
     containing any character that is not an alphabetic character
-    not containing each letter exactly once */
+    not containing each letter exactly once
 
     if (strlen(key) > 26 || strlen(key) < 26){
         //Check size
@@ -46,3 +48,4 @@ int isKeyValid(string key){
     }
     return 1;
 }
+*/
