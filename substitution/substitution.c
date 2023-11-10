@@ -4,6 +4,7 @@
 #include <string.h>
 
 int isKeyValid(string key);
+string encrypt(string plaintext, string key)
 
 int main(int argc, string argv[])
 {
@@ -21,6 +22,9 @@ int main(int argc, string argv[])
 
     if (isKeyValid(key)){
         printf("Key is: %s\n", key);
+        string plaintext = get_string("plaintext: ");
+        string ciphertext = encrypt(plaintext, key);
+        printf("%s\n", ciphertext)
     } else {
         printf("Invalid Key\n");
         return 1;
@@ -57,4 +61,8 @@ int isKeyValid(string key){
     }
 
     return 1;
+}
+
+string encrypt(string plaintext, string key){
+
 }
