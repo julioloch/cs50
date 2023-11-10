@@ -7,7 +7,7 @@ int isKeyValid(string key);
 
 int main(int argc, string argv[])
 {
-    string key = argv[1];
+    const string key = argv[1];
 
     if ((argc == 1) || (argc > 2)){
         printf("Usage: ./substitution key\n");
