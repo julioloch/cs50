@@ -29,11 +29,13 @@ int isKeyValid(string key){
     not containing each letter exactly once */
 
     if (strlen(key) > 26 || strlen(key) < 26){
+        //Check size
         return 0;
     } else {
+        //Check if is alphabetic
         for (int i = 0, int keyLen = strlen(key); i <= keyLen; i++){
-            if (tolower(key[i]) < 'a' || tolower(key[i]) > 'z'){
-                return 1;
+            if (isalpha(key[i]) == 0){
+                return 0;
             }
     }
 
