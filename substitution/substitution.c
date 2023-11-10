@@ -21,7 +21,6 @@ int main(int argc, string argv[])
     }
 
     if (isKeyValid(key)){
-        printf("Key is: %s\n", key);
         string plaintext = get_string("plaintext: ");
         string ciphertext = encrypt(plaintext, key);
         printf("%s\n", ciphertext);
