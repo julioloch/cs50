@@ -9,6 +9,7 @@ int main(int argc, string argv[])
     } else if (argc > 1){
         printf("Key must contain 26 characters.\n");
     } else {
+        if (strcom())
         string key = argv[1];
     }
 
