@@ -66,8 +66,8 @@ int isKeyValid(string key){
 string encrypt(string plaintext, string key){
 
     string ciphertext[] = {};
-    char aux;
-    char c;
+    string aux;
+    string c;
 
     for (int i = 0; plaintext[i] != '\0'; i++){
         c = plaintext[i];
