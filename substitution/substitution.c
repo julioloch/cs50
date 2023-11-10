@@ -64,6 +64,15 @@ int isKeyValid(string key){
 }
 
 string encrypt(string plaintext, string key){
-    
+    int i = 0;
+    string ciphertext;
+    char aux;
+    while (plaintext[i] =! '\0'){
+        if (isalpha(plaintext[i])){
+            
+            ciphertext[i] = aux;
+        }
+        i++;
+    }
 
 }
