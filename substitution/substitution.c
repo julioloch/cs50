@@ -30,6 +30,9 @@ int isKeyValid(string key){
 
     if (strlen(key) > 26 || strlen(key) < 26){
         return 0;
-    } else if ()
-    return 0;
+    } else {
+        for (int i = 0, int keyLen = strlen(key); i <= keyLen; i++){
+            if ()
+    }
+
 }
