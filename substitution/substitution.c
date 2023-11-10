@@ -68,17 +68,17 @@ string encrypt(string plaintext, string key){
 
 
     for (int i = 0; plaintext[i] != '\0'; i++){
-        char c = tolower(plaintext[i]);
+        char c = plaintext[i];
         if (isalpha(c)){
             if (islower(c)){
                 ciphertext[i] = tolower(key[c - 'a']);
-            } else if (isupper(c)) {
-                ciphertext[i] = toupper(key[c - 'a']);
             } else {
-            ciphertext[i] = plaintext[i];
+                ciphertext[i] = toupper(key[c - 'A']);
             }
+        } else {
+            ciphertext[i] = plaintext[i];
         }
     }
-
     return ciphertext;
 }
+
