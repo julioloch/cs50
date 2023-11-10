@@ -33,18 +33,18 @@ sort 3 - 2,693s     slower
 
 random 5000
 
-sort 1 - 5,871s     slower
-sort 2 - 0,623s     fastest
-sort 3 - 2,494s
+sort 1 - 0,065s
+sort 2 - 0,033s
+sort 3 - 0,085s
 
 reversed 5000
 
-sort 1 - 5,119s     slower
-sort 2 - 0,591s     fastest
-sort 3 - 2,860s
+sort 1 - 0,121s     slower
+sort 2 - 0,034s     fastest
+sort 3 - 0,074s
 
 sorted 5000
 
-sort 1 - 0,110s     fastest
-sort 2 - 0,033s
-sort 3 - 2,693s     slower
+sort 1 - 0,047s
+sort 2 - 0,040s
+sort 3 - 0,072s
