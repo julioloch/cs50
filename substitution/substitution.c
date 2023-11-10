@@ -32,7 +32,9 @@ int isKeyValid(string key){
         return 0;
     } else {
         for (int i = 0, int keyLen = strlen(key); i <= keyLen; i++){
-            if ()
+            if (tolower(key[i]) < 'a' || tolower(key[i]) > 'z'){
+                return 1;
+            }
     }
 
 }
