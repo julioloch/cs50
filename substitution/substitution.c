@@ -6,9 +6,7 @@ int isKeyValid(string key){}
 
 int main(int argc, string argv[])
 {
-    if (argc = 0){
-        printf("Usage: ./substitution key\n");
-    } else if (argc > 1){
+    if (argc = 0 || argc > 1){
         printf("Usage: ./substitution key\n");
     } else if (isKeyValid(key) == 0) {
         printf("Key must contain 26 characters.\n");
