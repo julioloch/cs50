@@ -65,7 +65,7 @@ int isKeyValid(string key){
 
 string encrypt(string plaintext, string key){
 
-    string ciphertext = NULL;
+    string ciphertext[] = {};
     char aux;
     char c;
 
