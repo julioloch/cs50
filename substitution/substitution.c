@@ -37,19 +37,18 @@ int isKeyValid(string key){
     not containing each letter exactly once
     */
 
-    //Check if is alphabetic
-
     char keyFreq[26] = {0};
+
     for (int i = 0; i <= 26; i++){
-        if (isalpha(key[i]) == 0){
+        if (isalpha(key[i]) == 0){ // Check if is alphabetic
             return 0;
         } else {
-            keyFreq[tolower(key[i]) - 'a']++;
+            keyFreq[tolower(key[i]) - 'a']++; // Counts how many times a letter has been used
         }
     }
 
     for (int i = 0; i <= 26; i++){
-        if(keyFreq[i] > 1){
+        if(keyFreq[i] > 1){ // Checks if a letter has been used twice or more
             printf("Key has two or more identical characters\n");
             return 0;
         }
