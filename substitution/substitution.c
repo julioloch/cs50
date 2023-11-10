@@ -69,10 +69,11 @@ string encrypt(string plaintext, string key){
     char aux;
     while (plaintext[i] =! '\0'){
         if (isalpha(plaintext[i])){
-            
+
             ciphertext[i] = aux;
         }
         i++;
     }
 
+    return ciphertext;
 }
