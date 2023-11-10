@@ -7,20 +7,22 @@ int isKeyValid(string key);
 
 int main(int argc, string argv[])
 {
+    string key = argv[1];
 
     if ((argc == 1) || (argc > 2)){
         printf("Usage: ./substitution key\n");
         return 1;
     }
 
-    string key = argv[1];
-
     if (strlen(argv[1]) != 26) {
         printf("Key must contain 26 characters.\n");
         return 2;
     }
 
-    printf("%s\n", argv[1]);
+    if (isKeyValid(key)){
+        printf("%s\n", argv[1]);
+    }
+
     return 0;
 }
 
@@ -44,11 +46,11 @@ int isKeyValid(string key){
             return 0;
         } else {
             for (int j = 0; j < 26; j++){
-                if (keyValues[j] == key[i]){
+                if (keyValues[j] == tolower(key[i])){
                     printf("Key has two or more identical characters");
                     return 0;
                 } else {
-                    keyValues[i] = key[i];
+                    keyValues[i] = tolower(key[i]);
                 }
             }
         }
