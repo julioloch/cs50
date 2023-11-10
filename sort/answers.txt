@@ -1,7 +1,7 @@
 sort1 uses: Bubble Sort
 
-How do you know?: Its the fastest algorithm on sorted50000.txt. Since it is already sorted,
-bubble sort passes just one time through the array
+How do you know?: Its the fastest algorithm on sorted50000.txt. The text file is already sorted, so
+bubble sort passes just one time through the array checking if anything needs to be changed
 
 sort2 uses: Merge Sort
 
