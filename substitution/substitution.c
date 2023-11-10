@@ -45,12 +45,12 @@ int isKeyValid(string key){
         if (isalpha(key[i]) == 0){
             return 0;
         } else {
+            
+            keyValues[i] = tolower(key[i]);
             for (int j = 0; j < 26; j++){
-                if (keyValues[j] == tolower(key[i])){
-                    printf("Key has two or more identical characters");
+                    if (keyValues[j] == tolower(key[i])){
+                    printf("Key has two or more identical characters\n");
                     return 0;
-                } else {
-                    keyValues[i] = tolower(key[i]);
                 }
             }
         }
