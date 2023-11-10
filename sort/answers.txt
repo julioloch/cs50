@@ -6,7 +6,7 @@ bubble sort passes just one time through the array checking if anything needs to
 sort2 uses: Merge Sort
 
 How do you know?: Its the fastest algorithm on random50000.txt and reversed50000.txt. That means that the algorithm can
-perform well on h It is also fast on the sorted50000.txt,
+perform  It is also fast on the sorted50000.txt,
 but not as fast as sort1, since sort1 uses Bubble Sort.
 
 sort3 uses: Selection Sort
