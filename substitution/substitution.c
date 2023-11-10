@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 int isKeyValid(string key);
 
@@ -32,7 +33,7 @@ int isKeyValid(string key){
         return 0;
     } else {
         //Check if is alphabetic
-        for (int i = 0, int keyLen = strlen(key); i <= keyLen; i++)
+        for (int i = 0, keyLen = strlen(key); i <= keyLen; i++)
         {
             if (isalpha(key[i]) == 0){
                 return 0;
