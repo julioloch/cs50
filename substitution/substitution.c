@@ -67,9 +67,9 @@ string encrypt(string plaintext, string key){
     int i = 0;
     string ciphertext;
     char aux;
-    while (plaintext[i] =! '\0'){
+    while (plaintext[i] != '\0'){
         if (isalpha(plaintext[i])){
-            aux = key[tolower(plaintext[i]) - 'a']
+            aux = key[tolower(plaintext[i]) - 'a'];
             if (islower(plaintext[i])){
                 ciphertext[i] = tolower(aux);
             } else {
