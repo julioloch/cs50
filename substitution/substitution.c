@@ -23,6 +23,7 @@ int main(int argc, string argv[])
         printf("Key is: %s\n", key);
     } else {
         printf("Invalid Key\n");
+        return 1;
     }
     return 0;
 }
