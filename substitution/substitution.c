@@ -70,7 +70,13 @@ string encrypt(string plaintext, string key){
     while (plaintext[i] =! '\0'){
         if (isalpha(plaintext[i])){
             aux = key[tolower(plaintext[i]) - 'a']
-            ciphertext[i] = aux;
+            if (islower(plaintext[i])){
+                ciphertext[i] = tolower(aux);
+            } else {
+                ciphertext[i] = toupper(aux);
+            }
+        } else {
+            ciphertext[i] = plaintext[i];
         }
         i++;
     }
