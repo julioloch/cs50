@@ -46,11 +46,9 @@ int isKeyValid(string key){
         {
             return 0;
         } else {
-            for (i = 0; i < 26; i++){
-                if (keyFreq[i] > 1){
-                printf("Key has two or more identical characters\n");
-                return 0;
-                }
+            
+            printf("Key has two or more identical characters\n");
+            return 0;
             }
         }
     }
