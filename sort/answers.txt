@@ -25,6 +25,26 @@ sort 3 - 2,860s
 
 sorted 50000
 
-sort 1 - 0,582s fastest
+sort 1 - 0,582s     fastest
 sort 2 - 0,721s
-sort 3 - 2,693s slower
+sort 3 - 2,693s     slower
+
+---------
+
+random 5000
+
+sort 1 - 5,871s     slower
+sort 2 - 0,623s     fastest
+sort 3 - 2,494s
+
+reversed 5000
+
+sort 1 - 5,119s     slower
+sort 2 - 0,591s     fastest
+sort 3 - 2,860s
+
+sorted 5000
+
+sort 1 - 0,110s     fastest
+sort 2 - 0,033s
+sort 3 - 2,693s     slower
