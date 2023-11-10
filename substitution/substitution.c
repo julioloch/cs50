@@ -23,7 +23,7 @@ int main(int argc, string argv[])
     if (isKeyValid(key)){
         string plaintext = get_string("plaintext: ");
         string ciphertext = encrypt(plaintext, key);
-        printf("%s\n", ciphertext);
+        printf("%s", ciphertext);
     } else {
         printf("Invalid Key\n");
         return 1;
