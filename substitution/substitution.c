@@ -40,18 +40,20 @@ int isKeyValid(string key){
     //Check if is alphabetic
 
     char keyFreq[26] = {0};
-    for (int i = 0; i <= 26; i++)
-    {
-        if (isalpha(key[i]) == 0)
-        {
+    for (int i = 0; i <= 26; i++){
+        if (isalpha(key[i]) == 0){
             return 0;
         } else {
-            
-            printf("Key has two or more identical characters\n");
-            return 0;
-            }
+            keyFreq[tolower(key[i]) - 'a']++;
         }
     }
+
+    for (int i = 0; i <= 26; i++){
+        if(keyFreq[i] > 1){
+            printf("Key has two or more identical characters\n");
+            return 0;
+        }
+    }
+
     return 1;
 }
-
