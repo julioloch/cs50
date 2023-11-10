@@ -66,17 +66,15 @@ int isKeyValid(string key){
 string encrypt(string plaintext, string key){
 
     string ciphertext[] = {};
-    string aux;
-    string c;
+
 
     for (int i = 0; plaintext[i] != '\0'; i++){
-        c = plaintext[i];
+        char c = plaintext[i];
         if (isalpha(c)){
-            aux = key[tolower(c) - 'a'];
             if (islower(c)){
-                ciphertext[i] = tolower(aux);
+                ciphertext[i] = tolower(key[tolower(c) - 'a']);
             } else {
-                ciphertext[i] = toupper(aux);
+                ciphertext[i] = toupper(key[tolower(c) - 'a']);
             }
         } else {
             ciphertext[i] = plaintext[i];
