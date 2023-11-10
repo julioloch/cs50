@@ -39,22 +39,21 @@ int isKeyValid(string key){
 
     //Check if is alphabetic
 
-    char keyValues[] = {};
+    char keyFreq[] = {};
     for (int i = 0; i <= 26; i++)
     {
-        if (isalpha(key[i]) == 0){
+        if (isalpha(key[i]) == 0)
+        {
             return 0;
         } else {
-            if (keyValues[j] == tolower(key[i])){
+            for (i = 0; i < 26; i++){
+                if (keyFreq[i] > 1){
                 printf("Key has two or more identical characters\n");
-            return 0;
-            }
-            for (int j = 0; j < 26; j++){
+                return 0;
                 }
             }
         }
     }
-
     return 1;
 }
 
