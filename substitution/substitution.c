@@ -76,6 +76,7 @@ string encrypt(string plaintext, string key){
                 ciphertext[i] = toupper(key[c - 'a']);
             } else {
             ciphertext[i] = plaintext[i];
+            }
         }
     }
 
