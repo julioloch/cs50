@@ -1,11 +1,13 @@
 sort1 uses: Bubble Sort
 
 How do you know?: Its the fastest algorithm on sorted50000.txt. The text file is already sorted, so
-bubble sort passes just one time through the pool of values checking if anything needs to be changed. Nothing must be changed, so it checks only once. 
+bubble sort passes just one time through the pool of values checking if anything needs to be changed.
+Nothing must be changed, so it checks only once and ends.
+
 sort2 uses: Merge Sort
 
 How do you know?: Its the fastest algorithm on random50000.txt and reversed50000.txt. That means that the algorithm can
-perform well on a high number of values to order. Merge sort divides the list of values in multiple pieces, that are ordered and then merged.
+perform well on a big pool of values to order. Merge sort divides the list of values in multiple pieces, that are ordered and then merged.
 It is also fast on the sorted50000.txt, but not as fast as sort1, since sort1 uses Bubble Sort.
 
 sort3 uses: Selection Sort
