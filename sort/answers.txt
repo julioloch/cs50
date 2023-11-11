@@ -12,7 +12,8 @@ It is also fast on the sorted50000.txt, but not as fast as sort1, since sort1 us
 
 sort3 uses: Selection Sort
 
-How do you know?: It's the only one remaining. But also, it has an almost constant runtime through all the diferent pool of values
+How do you know?: It's the only one remaining. But also, it has an almost constant runtime through random, reversed and sorted pools of values,
+so it matches the big O and big Omega notations of n² from the Selection Sort algorithm.
 
 Timings
 ---------------
