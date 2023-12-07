@@ -1,3 +1,14 @@
 {
-    "gitdoc.enabled": true
+    "gitdoc.enabled": true,
+    "files.associations": {
+        "*.tcc": "c",
+        "unordered_map": "c",
+        "memory_resource": "c",
+        "algorithm": "c",
+        "functional": "c",
+        "memory": "c",
+        "streambuf": "c",
+        "tuple": "c",
+        "utility": "c"
+    }
 }
