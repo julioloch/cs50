@@ -137,6 +137,7 @@ void add_pairs(void)
                 aux.winner = row;
                 aux.loser = col;
                 pairs[pair_count] = aux;
+                printf("Novo par. Par numero %i. Vencedor: %s Perdedor: %s", pair_count, candidates[aux.winner], candidates[aux.loser]);
                 pair_count++;
             }
         }
