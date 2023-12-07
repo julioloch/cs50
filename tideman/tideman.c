@@ -134,8 +134,8 @@ void add_pairs(void)
             if (preferences[row][col] > preferences[col][row])
             {
                 pair aux;
-                pair aux.winner = row;
-                pair aux.loser = col;
+                aux.winner = row;
+                aux.loser = col;
                 pairs[pair_count] = aux;
                 pair_count++;
             }
