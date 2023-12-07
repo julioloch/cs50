@@ -131,7 +131,7 @@ void add_pairs(void)
     {
         for (int col = 0; col < candidate_count; col++)
         {
-            if (preferences[row][col] > preferences [col][row])
+            if (preferences[row][col] > preferences[col][row])
             {
                 pair aux = {row, col};
                 pairs[pair_count] = aux;
@@ -145,7 +145,7 @@ void add_pairs(void)
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
-    
+
     // TODO
     return;
 }
