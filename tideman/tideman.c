@@ -133,8 +133,8 @@ void add_pairs(void)
         {
             if (preferences[i][j] > preferences [j][i])
             {
-                pair new_pair = {i, j};
-                pairs[pair_count] = new_pair;
+                pair aux = {i, j};
+                pairs[pair_count] = aux;
                 pair_count++;
             }
         }
@@ -144,7 +144,8 @@ void add_pairs(void)
 
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
-{ 
+{
+
     // TODO
     return;
 }
