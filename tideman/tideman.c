@@ -115,14 +115,14 @@ void record_preferences(int ranks[])
 {
     for (int row = 0; row < candidate_count; row++)
     {
-        for (int col = i+1; col < candidate_count; col++)
+        for (int col = row+1; col < candidate_count; col++)
         {
             preferences[ranks[row]][ranks[col]]++;
         }
     }
-}
     return;
 }
+
 
 // Record pairs of candidates where one is preferred over the other
 void add_pairs(void)
