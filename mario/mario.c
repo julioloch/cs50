@@ -4,7 +4,7 @@
 int main (void)
 {
     int height = get_int("Height: ");
-    int spaces = height - 1;
+    int spaces = height - 2;
 
     for (int i = 1; i <= height; i++)
     {
