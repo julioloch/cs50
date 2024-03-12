@@ -3,9 +3,10 @@
 
 int main (void)
 {
+    int height = 0;
     while (height < 1 || height > 8)
     {
-        int height = get_int("Height: ");
+        height = get_int("Height: ");
     }
 
     int spaces = height - 2;
