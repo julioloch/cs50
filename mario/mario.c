@@ -1,7 +1,7 @@
-#include <stdio.h>
 #include <cs50.h>
+#include <stdio.h>
 
-int main (void)
+int main(void)
 {
     int height = 0;
     while (height < 1 || height > 8)
@@ -13,7 +13,7 @@ int main (void)
 
     for (int i = 1; i <= height; i++)
     {
-        for (int k = spaces; k >=0; k--)
+        for (int k = spaces; k >= 0; k--)
         {
             printf(" ");
         }
