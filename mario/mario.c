@@ -20,12 +20,12 @@ int main(void)
         for (int j = 1; j <= i; j++)
         {
 
-            printf("#");
+            printf("cu");
         }
         printf("  ");
         for (int j = 1; j <= i; j++)
         {
-            printf("#");
+            printf("cu");
         }
         printf("\n");
         spaces--;
