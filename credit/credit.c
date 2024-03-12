@@ -3,6 +3,6 @@
 
 int main(void)
 {
-   string resposta = get_String("digite ");
-   printf("vc digitou isso: %s", resposta);
+   string resposta = get_string("digite ");
+   printf("vc digitou isso: %s\n", resposta);
 }
