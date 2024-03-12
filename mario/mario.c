@@ -15,17 +15,17 @@ int main(void)
     {
         for (int k = spaces; k >= 0; k--)
         {
-            printf(" ");
+            printf("     ");
         }
         for (int j = 1; j <= i; j++)
         {
 
-            printf("cu");
+            printf("lucas");
         }
         printf("  ");
         for (int j = 1; j <= i; j++)
         {
-            printf("cu");
+            printf("julio");
         }
         printf("\n");
         spaces--;
