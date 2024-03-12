@@ -4,10 +4,11 @@
 int main (void)
 {
     int height = get_int("Height: ");
+    int spaces = height - 1;
 
     for (int i = 1; i <= height; i++)
     {
-        for (int k = height-1; k >=0; k--)
+        for (int k = spaces; k >=0; k--)
         {
             printf(" ");
         }
@@ -22,5 +23,6 @@ int main (void)
             printf("#");
         }
         printf("\n");
+        spaces--;
     }
 }
