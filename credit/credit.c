@@ -3,6 +3,10 @@
 
 int main(void)
 {
-   long creditNumber = get_long("Number: ");
-   printf("vc digitou isso: %s\n", creditNumber);
+    do
+    {
+        
+    }
+   long cardNumber = get_long("Number: ");
+   printf("vc digitou isso: %s\n", cardNumber);
 }
