@@ -3,6 +3,6 @@
 
 int main(void)
 {
-   string resposta = get_string("digite ");
-   printf("vc digitou isso: %s\n", resposta);
+   long creditNumber = get_long("Number: ");
+   printf("vc digitou isso: %s\n", creditNumber);
 }
