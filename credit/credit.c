@@ -8,6 +8,6 @@ int main(void)
     {
     cardNumber = get_long("Number: ");
     }
-    while ()
-    printf("vc digitou isso: %s\n", cardNumber);
+    while (!isValid(cardNumber));
+    printf("cardNumber: %s\n", cardNumber);
 }
