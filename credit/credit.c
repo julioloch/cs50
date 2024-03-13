@@ -16,5 +16,11 @@ int main(void)
     cardNumber = get_long("Number: ");
     }
     while (!isValid(cardNumber));
+
     printf("cardNumber: %s\n", cardNumber);
+}
+
+int isValid(long cardNumber)
+{
+    if (cardNumber > 10)
 }
