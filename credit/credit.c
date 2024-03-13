@@ -5,7 +5,7 @@
 //All American Express numbers start with 34 or 37; most MasterCard numbers start with 51, 52, 53, 54, or 55
 //all Visa numbers start with 4
 
-int isValid(long cardNumber);
+bool isValid(long cardNumber);
 int checkSum(long cardNumber);
 
 int main(void)
@@ -20,7 +20,7 @@ int main(void)
     printf("cardNumber: %s\n", cardNumber);
 }
 
-int isValid(long cardNumber)
+bool isValid(long cardNumber)
 {
     if (cardNumber > 10)
 }
