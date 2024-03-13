@@ -3,10 +3,11 @@
 
 int main(void)
 {
+    long cardNumber;
     do
     {
-        
+    cardNumber = get_long("Number: ");
     }
-   long cardNumber = get_long("Number: ");
-   printf("vc digitou isso: %s\n", cardNumber);
+    while ()
+    printf("vc digitou isso: %s\n", cardNumber);
 }
