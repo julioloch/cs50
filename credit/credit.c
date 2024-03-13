@@ -6,7 +6,7 @@
 //all Visa numbers start with 4
 
 bool isValid(long cardNumber);
-int checkSum(long cardNumber);
+bool checkSum(long cardNumber);
 
 int main(void)
 {
@@ -20,7 +20,7 @@ int main(void)
     printf("cardNumber: %s\n", cardNumber);
 }
 
-bool isValid(long cardNumber)
+bool checkSum(long cardNumber)
 {
-    if (cardNumber > 10)
+    for 
 }
