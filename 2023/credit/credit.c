@@ -20,7 +20,8 @@ int main(void)
     long creditCard = get_long("Number: ");
     if (luhn(creditCard) == true)
     {
-        if ((countDigits(creditCard) == 15) && ((creditCard / (long) pow(10, 13) == 34) || (creditCard / (long) pow(10, 13) == 37)))
+        if ((countDigits(creditCard) == 15) &&
+            ((creditCard / (long) pow(10, 13) == 34) || (creditCard / (long) pow(10, 13) == 37)))
         {
             printf("AMEX\n");
         }
@@ -29,10 +30,11 @@ int main(void)
         {
             printf("VISA\n");
         }
-        else if ((countDigits(creditCard) == 16) &&
-                 ((creditCard / (long) pow(10, 14) == 51) || (creditCard / (long) pow(10, 14) == 52) ||
-                  (creditCard / (long) pow(10, 14) == 53) || (creditCard / (long) pow(10, 14) == 54) ||
-                  (creditCard / (long) pow(10, 14) == 55)))
+        else if ((countDigits(creditCard) == 16) && ((creditCard / (long) pow(10, 14) == 51) ||
+                                                     (creditCard / (long) pow(10, 14) == 52) ||
+                                                     (creditCard / (long) pow(10, 14) == 53) ||
+                                                     (creditCard / (long) pow(10, 14) == 54) ||
+                                                     (creditCard / (long) pow(10, 14) == 55)))
         {
             printf("MASTERCARD\n");
         }
